@@ -179,6 +179,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, amount: 0.4 }}
             transition={{ duration: 0.4 }}
+            onClick={() => scrollToSection("paquetes")}
             className="mt-8 bg-[#6FC5CC] text-[#075B5D] px-8 py-3 rounded-xl font-medium hover:bg-[#5bb5bc] transition"
           >
             Quiero empezar

@@ -60,7 +60,7 @@ export default function SobreMi() {
             className="space-y-6"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-[#075B5D]">
-              Lic. Yessica Cusquisibán Alcantara
+              Yessica Cusquisibán Alcantara
             </h2>
 
             <p className="text-[#6FC5CC] font-semibold tracking-wide">
@@ -68,9 +68,10 @@ export default function SobreMi() {
             </p>
 
             <p className="text-gray-700 leading-relaxed text-justify">
-              Licenciada en Nutrición Humana, egresada de la Universidad Peruana Unión,
-              con formación continua en soporte nutricional, alimentación vegetariana,
-              nutrición clínica y cuidado del paciente crítico.
+              Licenciada en Nutrición Humana, egresada de la <strong>Universidad Peruana Unión</strong>,
+              con formación continua en soporte nutricional, alimentación vegetariana, 
+              alimentación complementaria, nutrición en paciente crítico y síndrome de
+               realimentación..
             </p>
 
             <p className="text-gray-700 leading-relaxed text-justify">
@@ -103,9 +104,8 @@ export default function SobreMi() {
               transition={{ duration: 0.6 }}
               className="text-gray-700 leading-relaxed text-justify"
             >
-              Nací en Cajamarca, Perú, donde realicé mis estudios primarios y secundarios.
-              Desde joven sentí el deseo de seguir una profesión orientada al servicio,
-              prevención y promoción de la salud.
+              Hola, mi nombre es Yessica Cusquisibán Alcantara, soy nutricionista y les voy a contar un poco sobre mí. 
+
             </motion.p>
 
             <motion.p
@@ -115,9 +115,8 @@ export default function SobreMi() {
               transition={{ duration: 0.6 }}
               className="text-gray-700 leading-relaxed text-justify"
             >
-              Realicé mi internado clínico en el Hospital Almenara Irigoyen, el internado
-              comunitario en Iquitos y mi SERUMS en la ciudad de Bagua, experiencias que
-              reforzaron mi visión integral del cuidado en salud.
+              Nací en Cajamarca, Perú; donde realicé mis estudios primarios y secundarios. Desde adolescente tuve el interés de estudiar una carrera que me permita servir a las personas a través de ella; por ello, me incliné a estudiar una carrera de salud, Nutrición. Es así que realicé mis estudios en la Universidad Peruana Unión, durante esta etapa pude entender mejor importancia que tiene la nutrición en todas las etapas de vida, más aún siendo una carrera preventiva promocional, y saber que es mejor prevenir una enfermedad antes que tratarla.
+
             </motion.p>
 
             <motion.p
@@ -127,9 +126,22 @@ export default function SobreMi() {
               transition={{ duration: 0.6 }}
               className="text-gray-700 leading-relaxed text-justify"
             >
-              Así nació <strong>Nutre Bless</strong>, un espacio creado para acompañarte
-              a construir hábitos saludables y sostenibles, sin restricciones,
-              con educación y empatía.
+              Realicé mi internado clínico en el Hospital Almenara Irigoyen, el internado comunitario en Iquitos; asimismo mi SERUMS en la ciudad de Bagua, y esta experiencia me ha llevado a considerar que mi principal objetivo como nutricionista es ayudar a otras personas a ganar salud de manera integral (físico, mental, social y espiritual).
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.6 }}
+              className="text-gray-700 leading-relaxed text-justify"
+            >
+              Ello me ayudó a decidir emprender este proyecto <strong>Nutre Bless</strong>, 
+              un espacio que se enfoque en tu salud y bienestar. 
+              Quiero acompañarte a construir hábitos saludables y un estilo de vida que disfrutes, 
+              que se mantenga para siempre y que tu alimentación te haga sentir bien, pero no a base de restricciones. 
+              
+
             </motion.p>
           </motion.div>
 
@@ -144,7 +156,7 @@ export default function SobreMi() {
           </motion.p>
         </div>
 
-        
+
       </div>
 
       {/* ===== FRANJA VERDE FULL WIDTH ===== */}
