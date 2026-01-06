@@ -89,11 +89,19 @@ export default function Contacto() {
 
         setLoading(true);
 
+        const textoWhatsApp = `Hola ${nombre}, te escribimos desde *Nutre Bless* para responder tu consulta.`;
+        const whatsappCodificado = encodeURIComponent(textoWhatsApp);
+
         emailjs
             .send(
                 "service_u1n287h",
                 "template_ciywbou",
-                { nombre, celular, mensaje },
+                {
+                    nombre,
+                    celular,
+                    mensaje,
+                    whatsapp: whatsappCodificado
+                },
                 "HlZnQDW40ekpsAD8W"
             )
             .then(() => {
