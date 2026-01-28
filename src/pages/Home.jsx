@@ -3,6 +3,7 @@ import heroImage from "../assets/principal.webp";
 import { FaBullseye, FaEye, FaHeart } from "react-icons/fa";
 import logo_completo from "../assets/logo_completo.webp";
 import { scrollToSection } from "../utils/scrollToSection";
+import { Helmet } from "react-helmet-async";
 
 /* ===== VARIANTS ===== */
 const fadeUp = {
@@ -13,6 +14,21 @@ const fadeUp = {
 export default function Home() {
   return (
     <main id="inicio">
+      <Helmet>
+        <title>Nutricionista en Cajamarca | Nutre Bless</title>
+        <meta
+          name="description"
+          content="Consultas nutricionales personalizadas en Cajamarca. Mejora tu salud, tu relación con la comida y tus hábitos con acompañamiento profesional."
+        />
+        <meta name="keywords" content="nutricionista en Cajamarca, nutrición personalizada, planes alimenticios, consulta nutricional" />
+        <meta name="author" content="Nutre Bless" />
+
+        {/* Open Graph (para cuando compartan tu link) */}
+        <meta property="og:title" content="Nutre Bless | Nutrición personalizada en Cajamarca" />
+        <meta property="og:description" content="Acompañamiento nutricional realista, flexible y basado en ciencia." />
+        <meta property="og:image" content="/logo_completo.webp" />
+      </Helmet>
+
 
       {/* ================= HERO ================= */}
       <section className="bg-[#CCABDA]/20">
@@ -27,15 +43,23 @@ export default function Home() {
           >
             <img
               src={logo_completo}
-              alt="Logo Nutre Bless"
+              alt="Nutre Bless nutricionista en Cajamarca"
               className="w-full max-w-105 md:max-w-130 mx-auto object-contain"
             />
 
-            <p className="mt-6 text-gray-700 text-lg">
-              Transformamos tu salud a través de una nutrición realista,
-              flexible y basada en ciencia, con un acompañamiento humano
-              y personalizado.
+
+
+            <h1 className="mt-3 text-gray-600 text-sm md:text-base max-w-md">
+             Nutricionista en Cajamarca especializada en salud y alimentación personalizada
+            </h1>
+
+        
+            <p className="mt-3 text-sm font-medium tracking-wide text-[#075B5D]/80 uppercase">
+              Consulta nutricional profesional
             </p>
+
+
+
 
             <div className="mt-8 flex gap-4 flex-wrap justify-center md:justify-start">
               <button
@@ -64,12 +88,13 @@ export default function Home() {
           >
             <img
               src={heroImage}
-              alt="Nutre Bless nutrición y bienestar"
+              alt="Consulta nutricional profesional en Cajamarca"
               className="w-full max-w-sm md:max-w-full h-64 md:h-105 object-cover rounded-3xl shadow-lg"
             />
           </motion.div>
         </div>
       </section>
+
 
       {/* ================= ESENCIA ================= */}
       <section className="max-w-7xl mx-auto px-6 py-20">
@@ -102,7 +127,7 @@ export default function Home() {
             </div>
 
             <p className="mt-4 text-gray-600">
-             Brindar asesoramiento nutricional de calidad, personalizada y basada en evidencia científica, promoviendo un estilo de vida saludable para mejorar la calidad de vida de cada persona. Con el compromiso de acompañar en el proceso de cambio, con empatía, educación y herramientas prácticas.
+              Brindar asesoramiento nutricional de calidad, personalizada y basada en evidencia científica, promoviendo un estilo de vida saludable para mejorar la calidad de vida de cada persona. Con el compromiso de acompañar en el proceso de cambio, con empatía, educación y herramientas prácticas.
             </p>
           </motion.div>
 

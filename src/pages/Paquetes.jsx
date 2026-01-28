@@ -31,7 +31,11 @@ export default function Paquetes() {
 
       <div className="max-w-7xl mx-auto px-6">
         {/* ===== TÍTULO ===== */}
-        <motion.h1
+        <h1 className="sr-only">
+          Precios de Consulta Nutricional en Cajamarca
+        </h1>
+
+        <motion.p
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
@@ -39,10 +43,16 @@ export default function Paquetes() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center text-[#075B5D]"
         >
-          Nuestros Paquetes 
-        </motion.h1>
+          Nuestros Paquetes
+        </motion.p>
 
         <div className="w-50 h-1 bg-[#6FC5CC] mx-auto mt-10 rounded-full" />
+
+        <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
+          Conoce los paquetes de consulta nutricional <strong>Nutre Bless</strong>. Planes diseñados
+          para bajar de peso, mejorar tu salud, ganar masa muscular y aprender a
+          alimentarte de forma equilibrada con acompañamiento profesional.
+        </p>
 
 
         {/* ===== CARDS ===== */}
@@ -71,7 +81,7 @@ export default function Paquetes() {
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold text-white"
         >
-          Un espacio creado para cuidar de ti
+          ¿Qué incluye una consulta nutricional?
         </motion.h2>
 
         <motion.p
@@ -81,9 +91,16 @@ export default function Paquetes() {
           transition={{ delay: 0.15 }}
           className="mt-4 text-white/80 max-w-2xl mx-auto"
         >
-          Nutrición basada en ciencia, empatía y acompañamiento real
+          Cada consulta nutricional incluye evaluación nutricional completa,
+          diagnóstico, plan de alimentación personalizado y seguimiento continuo
         </motion.p>
       </div>
+
+      <p className="sr-only">
+        Nutricionista en Cajamarca, consulta nutricional precio, planes de alimentación,
+        bajar de peso, ganar masa muscular, control nutricional, asesoría nutricional profesional.
+      </p>
+
 
 
     </section>

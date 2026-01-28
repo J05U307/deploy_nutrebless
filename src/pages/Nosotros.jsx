@@ -7,7 +7,14 @@ import consultorio2 from "../assets/consultorio2.webp";
 import consultorio3 from "../assets/consultorio3.webp";
 import logo from "../assets/logo_colores_circulo.webp";
 
-const images = [consultorio1, consultorio2, consultorio3];
+//const images = [consultorio1, consultorio2, consultorio3];
+
+const images = [
+    { src: consultorio1, alt: "Consultorio de nutrición Nutre Bless en Cajamarca" },
+    { src: consultorio2, alt: "Espacio de atención nutricional profesional en Cajamarca" },
+    { src: consultorio3, alt: "Centro de asesoría nutricional Nutre Bless" },
+];
+
 
 /* ===== VARIANTES ===== */
 const fadeUp = {
@@ -58,6 +65,7 @@ export default function Nosotros() {
                             Nutre Bless
                         </h2>
 
+
                         <span className="w-20 h-1 bg-[#6FC5CC] rounded-full" />
                     </motion.div>
 
@@ -69,13 +77,17 @@ export default function Nosotros() {
                         transition={{ staggerChildren: 0.2 }}
                         className="max-w-4xl mx-auto text-center text-gray-700 space-y-5 leading-relaxed"
                     >
+
+
                         <motion.p variants={fadeUp}>
-                            Hola, somos <strong>Nutre Bless</strong>, un consultorio que transforma tu salud a través de la nutrición, brindando una atención personalizada, empática y centrada en cada persona.
+                            Somos <strong>Nutre Bless</strong>, un <strong>consultorio de nutrición en Cajamarca</strong> que transforma tu salud brindando una atención personalizada, empática y centrada en cada persona.
                         </motion.p>
+
 
                         <motion.p variants={fadeUp}>
                             Creemos en una nutrición realista, flexible y basada en evidencia científica, que respete tus creencias, hábitos y estilo de vida. Aquí no juzgamos ni imponemos dietas estrictas.
                         </motion.p>
+
 
                         <motion.p variants={fadeUp}>
                             Nos alegra que hayas decidido dar este primer paso: priorizar tu salud y bienestar. Con educación nutricional y acompañamiento constante, descubrirás que los cambios sí son posibles
@@ -90,7 +102,7 @@ export default function Nosotros() {
                         transition={{ duration: 0.6 }}
                         className="mt-20 relative max-w-5xl mx-auto"
                     >
-                       <div className="overflow-hidden rounded-3xl shadow-2xl relative
+                        <div className="overflow-hidden rounded-3xl shadow-2xl relative
                 h-72 md:h-96 lg:h-[45vh] xl:h-[50vh]">
 
 
@@ -98,8 +110,9 @@ export default function Nosotros() {
                             <AnimatePresence mode="wait">
                                 <motion.img
                                     key={index}
-                                    src={images[index]}
-                                    alt="Consultorio Nutre Bless"
+                                    src={images[index].src}
+                                    alt={images[index].alt}
+
                                     initial={{ opacity: 0, scale: 1.05 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     exit={{ opacity: 0, scale: 0.95 }}
@@ -141,8 +154,8 @@ export default function Nosotros() {
                                 <span
                                     key={i}
                                     className={`h-2 rounded-full transition-all ${i === index
-                                            ? "w-6 bg-[#075B5D]"
-                                            : "w-2 bg-[#6FC5CC]"
+                                        ? "w-6 bg-[#075B5D]"
+                                        : "w-2 bg-[#6FC5CC]"
                                         }`}
                                 />
                             ))}
@@ -170,7 +183,8 @@ export default function Nosotros() {
                     transition={{ delay: 0.2 }}
                     className="mt-4 text-white/80 max-w-2xl mx-auto"
                 >
-                    Nutrición basada en ciencia, empatía y acompañamiento real
+                    Asesoría nutricional profesional, planes personalizados y acompañamiento constante para mejorar tu salud de forma sostenible.
+
                 </motion.p>
             </div>
         </section>

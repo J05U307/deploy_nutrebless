@@ -163,6 +163,12 @@ export default function Contacto() {
                     Contáctanos
                 </motion.h2>
 
+                <p className="text-center text-gray-600 max-w-2xl mx-auto -mt-12 mb-16">
+                    Comunícate con nosotros para recibir asesoría
+                    nutricional personalizada, planes de alimentación y seguimiento profesional.
+                </p>
+
+
                 {/* ===== GRID ===== */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
                     {/* ===== FORM + INFO ===== */}
@@ -271,13 +277,21 @@ export default function Contacto() {
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.4 }}
                         className="bg-white rounded-2xl shadow-lg overflow-hidden min-h-[380px]" >
-                        <iframe title="Consultorio Nutricional Nutre Bless"
+                        <iframe title="Consultorio de nutricionista en Cajamarca - Nutre Bless"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5213961443305!2d-78.50269852507385!3d-7.181186392823826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25bd5db406f47%3A0x35029ba6413d8261!2sConsultorio%20Nutricional%20Nutre%20Bless!5e0!3m2!1ses-419!2spe!4v1767193639254!5m2!1ses-419!2spe"
                             className="w-full h-full border-0"
                             loading="lazy" allowFullScreen />
                     </motion.div>
                 </div>
             </div>
+
+            <p className="sr-only">
+                Nutricionista en Cajamarca, consulta nutricional, asesoría nutricional profesional,
+                planes de alimentación, bajar de peso, control de peso, nutrición clínica, atención nutricional en Cajamarca.
+            </p>
+
         </section>
+
+
     );
 }

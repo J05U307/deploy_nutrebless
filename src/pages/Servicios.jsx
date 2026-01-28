@@ -19,24 +19,27 @@ export default function Servicios() {
         transition={{ duration: 0.5 }}
         className="text-4xl font-bold text-center text-[#075B5D]"
       >
-        Nuestros Servicios
+        Nuestros Serviciosde Nutrición
       </motion.h2>
 
+
+
       <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
-        Programas nutricionales personalizados, adaptados a tu etapa de vida,
-        objetivos y necesidades.
+        Ofrecemos consulta nutricional en Cajamarca con planes de alimentación
+        personalizados para bajar de peso, ganar masa muscular, mejorar tu salud
+        digestiva y aprender a comer mejor según tu etapa de vida.
       </p>
 
 
       {/* ===== PROGRAMAS ===== */}
       <div className="max-w-7xl mx-auto px-6 mt-16">
-        <motion.h3
+        <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-2xl font-semibold text-[#075B5D] mb-10 text-center"
         >
           Programas nutricionales según tu objetivo
-        </motion.h3>
+        </motion.p>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {programas.map((item, i) => (
@@ -68,12 +71,12 @@ export default function Servicios() {
             whileInView={{ opacity: 1, y: 0 }}
             className="text-3xl font-bold text-white"
           >
-            Lo mejor para ti
+            ¿Qué incluye la consulta nutricional?
           </motion.h3>
 
           <p className="mt-4 text-white/80 max-w-2xl mx-auto">
-            Un enfoque integral para acompañarte de forma segura, humana
-            y sostenible.
+            Nuestra consulta nutricional incluye evaluación completa,
+            diagnóstico, plan de alimentación personalizado y seguimiento continuo.
           </p>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -92,8 +95,14 @@ export default function Servicios() {
           </div>
         </div>
       </div>
-
       
+      <p className="sr-only">
+        Nutricionista en Cajamarca especializada en pérdida de peso, aumento de masa muscular,
+        nutrición infantil, nutrición para adultos mayores y alimentación vegetariana.
+      </p>
+
+
+
     </section>
   );
 }
